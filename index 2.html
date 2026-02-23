@@ -1,22 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
-    <title>Document</title>
+    <title>CodeMentor Studio — Présentation</title>
 </head>
 <body>
-    <div class="card">
-        <img class="picture" 
-            src="Moi.jpg" 
-            alt="Ndzana Christophe with a red tie">
-        
-        <div>
-            <h3>Ndzana Christophe</h3>
-            <p>Fullstack Developper</p>
-            <h4>Yaounde, Cameroon</h4>
-        </div>
-    </div>
+    <main class="page">
+        <article class="project-card">
+            <header class="hero">
+                <p class="badge">🚀 Présentation Complète du Projet Final</p>
+                <h1>CodeMentor Studio</h1>
+                <p class="subtitle">IDE pédagogique multilangage, interactif et intelligent, conçu pour accompagner les étudiants africains dans l’apprentissage de la programmation et la réalisation de projets, entièrement offline et optimisé pour des machines peu puissantes.</p>
+            </header>
+
+            <section>
+                <h2>Problématique</h2>
+                <ul>
+                    <li>Peu d’accompagnement personnalisé pour les étudiants.</li>
+                    <li>Les IDE classiques sont lourds, peu pédagogiques et souvent dépendants d’Internet.</li>
+                    <li>Absence de solution locale adaptée aux besoins éducatifs en Afrique.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Solution proposée</h2>
+                <p>CodeMentor Studio est un IDE desktop 100% offline qui explique les concepts, propose des exercices interactifs, guide le debugging, accompagne les projets pas à pas et suit la progression des apprenants.</p>
+            </section>
+
+            <section>
+                <h2>Fonctionnalités du produit final</h2>
+                <div class="grid">
+                    <article class="panel">
+                        <h3>1️⃣ Éditeur avancé</h3>
+                        <ul>
+                            <li>Coloration syntaxique (Python, Java, C, JS)</li>
+                            <li>Numérotation des lignes</li>
+                            <li>Sauvegarde automatique + restauration</li>
+                            <li>Console intégrée</li>
+                        </ul>
+                    </article>
+                    <article class="panel">
+                        <h3>2️⃣ Exécution double</h3>
+                        <ul>
+                            <li>Mode Manuel (par défaut)</li>
+                            <li>Mode Live activable</li>
+                            <li>Sandbox sécurisé + timeout</li>
+                        </ul>
+                    </article>
+                    <article class="panel">
+                        <h3>3️⃣ Explication de code</h3>
+                        <ul>
+                            <li>Analyse AST / logique</li>
+                            <li>Explication ligne par ligne</li>
+                            <li>Détection d’erreurs fréquentes + analogies</li>
+                        </ul>
+                    </article>
+                    <article class="panel">
+                        <h3>4️⃣ Exercices interactifs</h3>
+                        <ul>
+                            <li>Exercices par niveau</li>
+                            <li>Tests automatiques + feedback détaillé</li>
+                            <li>Suivi de progression</li>
+                        </ul>
+                    </article>
+                    <article class="panel">
+                        <h3>5️⃣ Mode Debugging</h3>
+                        <ul>
+                            <li>Code volontairement erroné</li>
+                            <li>Correction guidée par feedback</li>
+                            <li>Entraînement à la résolution de problèmes</li>
+                        </ul>
+                    </article>
+                    <article class="panel">
+                        <h3>6️⃣ Accompagnement projet</h3>
+                        <ul>
+                            <li>Guidage étape par étape</li>
+                            <li>Questions stratégiques sans donner le code</li>
+                            <li>Conseils sur structure, stockage et interface</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <h2>Architecture technique</h2>
+                <pre class="architecture">UI Layer
+ ├── EditorWidget
+ ├── ConsoleWidget
+ ├── ModeToggle (Live/Manuel)
+ └── ExercisePanel
+
+Core Layer
+ ├── ExecutionEngine (sandbox, live/manual)
+ ├── CodeExplainer (AST, analogies)
+ ├── ExerciseEngine (tests automatiques)
+ ├── DebugEngine (erreurs simulées)
+ └── ProjectCoach (guide projet interactif)
+
+Data Layer
+ └── SQLite (exercices, progression, paramètres)</pre>
+            </section>
+
+            <section>
+                <h2>Outils recommandés (MVP & produit final)</h2>
+                <p><strong>UI & Éditeur:</strong> PyQt6, QScintilla, QPlainTextEdit, Pygments.</p>
+                <p><strong>Explication:</strong> ast, inspect, difflib, re, textwrap, markdown/rich, OpenAI API (optionnel pour analogies avancées).</p>
+                <p><strong>Exercices & progression:</strong> unittest/pytest, sqlite3, SQLAlchemy (optionnel), random.</p>
+                <p><strong>Debugging & exécution:</strong> subprocess, exec/eval contrôlé, traceback, threading/QTimer, multiprocessing, timeout.</p>
+                <p><strong>Données:</strong> SQLite (léger et offline), pandas (optionnel pour statistiques).</p>
+            </section>
+
+            <footer>
+                <h2>Valeur pédagogique</h2>
+                <ul>
+                    <li>Transforme les cours passifs en apprentissage actif.</li>
+                    <li>Encourage la réflexion plutôt que la copie.</li>
+                    <li>Développe les compétences pratiques et théoriques.</li>
+                    <li>S’adapte au contexte local: offline, multilingue, faible machine.</li>
+                </ul>
+            </footer>
+        </article>
+    </main>
 </body>
 </html>
